@@ -213,5 +213,157 @@ function draw(){
 
   fill(255, 255, 255);
   stroke(255, 255, 255);
-  rect(90, 236, 25, 30); // rect(x, y, width, height) (right ear pink_6)
+  rect(90, 236, 25, 30); // rect(x, y, width, height) (right ear white_7)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(115, 236, 25, 30); // rect(x, y, width, height) (right ear dark pink_7_2)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(140, 236, 25, 30); // rect(x, y, width, height) (right ear pink_7)
+
+  fill(0, 0, 0);
+  stroke(0, 0, 0);
+  rect(166, 236, 25, 30); // rect(x, y, width, height) (centre eyes black_7)
+
+  fill(248, 165, 181);
+  stroke(248, 165, 181);
+  rect(192, 236, 50, 30); // rect(x, y, width, height) (center pink_7)
+
+  fill(0, 0, 0);
+  stroke(0, 0, 0);
+  rect(241, 236, 25, 30); // rect(x, y, width, height) (centre eyes black_7)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(267, 236, 25, 30); // rect(x, y, width, height) (center pink_7_2)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(293, 236, 25, 30); // rect(x, y, width, height) (center dark pink_7)
+
+  fill(255, 255, 255);
+  stroke(255, 255, 255);
+  rect(318, 236, 25, 30); // rect(x, y, width, height) (right white_7)
+
+  fill(248, 165, 181);
+  stroke(248, 165, 181);
+  rect(344, 236, 25, 30); // rect(x, y, width, height) (right light pink_7)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(366, 236, 25, 30); // rect(x, y, width, height) (right ears dark pink_7)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(64, 267, 25, 30); // rect(x, y, width, height) (right ear dark pink_8)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(90, 267, 25, 30); // rect(x, y, width, height) (right ear pink_8)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(115, 267, 25, 30); // rect(x, y, width, height) (right ear pink_8_2)
+
+  fill(248, 165, 181);
+  stroke(248, 165, 181);
+  rect(140, 267, 50, 30); // rect(x, y, width, height) (right ear light pink_8_)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(191, 267, 50, 30); // rect(x, y, width, height) (center pink mouth_8)
+
+  fill(248, 165, 181);
+  stroke(248, 165, 181);
+  rect(241, 267, 51, 30); // rect(x, y, width, height) (center light pink_8)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(293, 267, 24, 30); // rect(x, y, width, height) (right dark pink_8)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(318, 267, 25, 30); // rect(x, y, width, height) (right pink_8)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(344, 267, 21, 30); // rect(x, y, width, height) (right pink_8)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(90, 298, 25, 30); // rect(x, y, width, height) (right ear dark pink_9)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(115, 298, 25, 30); // rect(x, y, width, height) (right ear pink_9)
+
+  fill(248, 165, 181);
+  stroke(248, 165, 181);
+  rect(140, 298, 152, 30); // rect(x, y, width, height) (center light pink_9)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(293, 298, 24, 30); // rect(x, y, width, height) (center light pink_9)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(318, 298, 25, 30); // rect(x, y, width, height) (center light pink_9)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(90, 329, 49, 30); // rect(x, y, width, height) (right ear dark pink_10)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(140, 329, 25, 30); // rect(x, y, width, height) (right ear pink_10)
+
+  fill(248, 165, 181);
+  stroke(248, 165, 181);
+  rect(166, 329, 100, 30); // rect(x, y, width, height) (center light pink_10)
+
+  fill(208, 105, 122);
+  stroke(208, 105, 122);
+  rect(267, 329, 25, 30); // rect(x, y, width, height) (center pink_10)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(293, 329, 50, 30); // rect(x, y, width, height) (center pink_10)
+
+  fill(0, 0, 0);
+  stroke(0, 0, 0);
+  rect(90, 360, 25, 30); // rect(x, y, width, height) (left black_11)
+
+  fill(248, 165, 181);
+  stroke(248, 165, 181);
+  rect(115, 360, 25, 30); // rect(x, y, width, height) (left light pink_11)
+
+  fill(255, 255, 255);
+  stroke(255, 255, 255);
+  rect(140, 360, 25, 30); // rect(x, y, width, height) (left white_11)
+
+  fill(113, 63, 64);
+  stroke(113, 63, 64);
+  rect(166, 360, 100, 30); // rect(x, y, width, height) (center dark pink_11)
+
+  fill(255, 255, 255);
+  stroke(255, 255, 255);
+  rect(267, 360, 25, 30); // rect(x, y, width, height) (right white_11)
+
+  fill(248, 165, 181);
+  stroke(248, 165, 181);
+  rect(293, 360, 25, 30); // rect(x, y, width, height) (right light pink_11)
+
+  fill(0, 0, 0);
+  stroke(0, 0, 0);
+  rect(318, 360, 25, 30); // rect(x, y, width, height) (right black_11)
+
+  fill(0, 0, 0);
+  stroke(0, 0, 0);
+  rect(115, 391, 50, 30); // rect(x, y, width, height) (left black_12)
+
+  fill(0, 0, 0);
+  stroke(0, 0, 0);
+  rect(267, 391, 50, 30); // rect(x, y, width, height) (left black_12)
 }
