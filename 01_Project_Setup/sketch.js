@@ -54,7 +54,7 @@ ellipse(850, 50, 100, 100);
 // Left Line
 stroke(255, 255, 255);
 strokeWeight(3);
-line(100, 850, 100, 80);
+line(50, 20, 50, 875);
 
       // Set colors
       fill(255, 255, 0);
@@ -75,6 +75,15 @@ stroke(255,255,255)
 
         // An ellipse Bottom Right
           ellipse(850, 850, 100, 100);
+//top line
+stroke(255, 0, 255);
+strokeWeight(3);
+line(850, 50, 50, 50);
+
+//bottom line
+stroke(0, 255, 0);
+strokeWeight(3);
+line(50, 850, 850, 850);
 
           //Set the color of the text
           fill(255,255,255);

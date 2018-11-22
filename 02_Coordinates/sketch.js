@@ -1,5 +1,5 @@
 //DAT405 / GAD405
-//02_Coordinates 
+//02_Coordinates
 
 //Initialization function
 function setup() {
