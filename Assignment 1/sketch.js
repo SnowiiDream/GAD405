@@ -21,7 +21,7 @@ function setup() { //the function that is called once the program starts, initia
 }
 
 function draw() { //function that is called after function set up, rendering function
-  background(0); //makes the background colour black
+  background(0, 30); //makes the background colour black and also makes the background slightly translucent so that movement leaves trails
   for (var i = 0; i < count; i++) { //variable i is created and set to 0, i is less than count, the value of i is increased by 1
     mods[i].update(); // calling the function, uses the array mods which uses the index value
     mods[i].draw(); // calling the function, uses the array mods which uses the index value
