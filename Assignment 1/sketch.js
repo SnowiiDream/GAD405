@@ -5,6 +5,7 @@ var mods = []; //creates an array
 function setup() { //the function that is called once the program starts, initialization function
   createCanvas(594, 841); // creates the canvas size
   noStroke(); //gives the shape no stroke
+  //frameRate(25); //makes the movement speed slower
   var wideCount = width / unit; //variable for the width count = width divided by the amount of shapes
   var highCount = height / unit; // variable for the height count = height divided by the amount of shapes
   count = wideCount * highCount; // saying that count = width count x height count
@@ -21,7 +22,7 @@ function setup() { //the function that is called once the program starts, initia
 }
 
 function draw() { //function that is called after function set up, rendering function
-  background(0, 30); //makes the background colour black and also makes the background slightly translucent so that movement leaves trails
+  background(0, 30); //makes the background colour black and the second value makes the background slightly translucent so that movement leaves trails
   for (var i = 0; i < count; i++) { //variable i is created and set to 0, i is less than count, the value of i is increased by 1
     mods[i].update(); // calling the function, uses the array mods which uses the index value
     mods[i].draw(); // calling the function, uses the array mods which uses the index value
