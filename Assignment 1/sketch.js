@@ -2,35 +2,37 @@ var unit = 40; //variable number for the amount of rectangles
 var count; // creates a variable named count
 var mods = []; //creates an array
 
-function setup() {
-  createCanvas(594, 841);
-  noStroke();
+function setup() { //the function that is called once the program starts, initialization function
+  createCanvas(594, 841); // creates the canvas size
+  noStroke(); //gives the shape no stroke
   var wideCount = width / unit; //variable for the width count = width divided by the amount of shapes
   var highCount = height / unit; // variable for the height count = height divided by the amount of shapes
   count = wideCount * highCount; // saying that count = width count x height count
 
-  var index = 0; //variable index = 0
-  for (var y = 0; y < highCount; y++) {
-    for (var x = 0; x < wideCount; x++) {
-      mods[index++] = new Module(x*unit, y*unit, unit/2, unit/2,
-        random(0.05, 0.8), unit);
+  var index = 0; //variable index is set to 0
+  for (var y = 0; y < highCount; y++) { // for controls a sequence of repetitions, each part is separated by a semi colon and loop continues as long as it's true
+    //variable y is created and set to 0, y is less than the highCount, the value of y is increased by 1
+    for (var x = 0; x < wideCount; x++) { // variable x is created and set to 0, x is less than the wideCount, the value of x is increased by 1
+      mods[index++] = new Module(x*unit, y*unit, unit/2, unit/2, //uses the array mods and uses the index value which is increased by 1
+        //the new Module is set to (variable x x variable unit, variable y x variable unit, variable unit divided by 2, variable unit divided by 2)
+        random(0.05, 0.8), unit); //function will return a float with a value between the two values (0.05, 0.8) and the unit variable
     }
   }
 }
 
-function draw() {
+function draw() { //function that is called after function set up, rendering function
   background(0); //makes the background colour black
-  for (var i = 0; i < count; i++) {
-    mods[i].update(); // calling the function
-    mods[i].draw(); // calling the function
+  for (var i = 0; i < count; i++) { //variable i is created and set to 0, i is less than count, the value of i is increased by 1
+    mods[i].update(); // calling the function, uses the array mods which uses the index value
+    mods[i].draw(); // calling the function, uses the array mods which uses the index value
   }
 }
 
 function Module(_xOff, _yOff, _x, _y, _speed, _unit) {
   this.xOff = _xOff; //the shape's x position
-  this.yOff = _yOff; //the shaoe's y position
-  this.x = _x;
-  this.y = _y;
+  this.yOff = _yOff; //the shape's y position
+  this.x = _x; //array for the value x
+  this.y = _y; //array for the value y
   this.speed = _speed; // array for the speed of the circles
   this.unit = _unit; //array for the number of shapes
   this.xDir = 1; // array for x direction
@@ -40,18 +42,18 @@ function Module(_xOff, _yOff, _x, _y, _speed, _unit) {
 // Changing the variables
 Module.prototype.update = function() { //naming the function
   this.x = this.x + (this.speed * this.xDir); //uses the x array and adds this to (speed array x xdirection)
-  if (this.x >= this.unit || this.x <= 0) {
+  if (this.x >= this.unit || this.x <= 0) {  //compares the two expressions and returns true if one or both expressions are true
+    //array of x is greater than or equal to the number of shapes array compares array of x is less than or equal to 0
     this.xDir *= -1; //alters the xdirection array
     this.x = this.x + (1 * this.xDir); //x = x + (1 x xdirection)
     this.y = this.y + (1 * this.yDir); // y = y +(1 x ydirection)
   }
-  if (this.y >= this.unit || this.y <= 0) {
+  if (this.y >= this.unit || this.y <= 0) { //array of y is greater than or equal to the number of shapes array compares array of y is less than or equal to 0
     this.yDir *= -1; //alters the ydirection array
     this.y = this.y + (1 * this.yDir); //y = y + (1 x ydirection)
   }
 }
 
-// Drawing a shape
 Module.prototype.draw = function() { //naming the function
   if (mouseIsPressed) { //if statement if the mouse is pressed
   fill(random(255),random(255),random(255)) //changes the fill to a random colour
