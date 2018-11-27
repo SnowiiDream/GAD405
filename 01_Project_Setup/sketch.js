@@ -27,22 +27,42 @@ function draw() {
   //Erase all canvas. Set the color to dark grey
   background(128,0,128);
 
-// Right Line
-stroke(0,0,0)
-  strokeWeight(3);
-            line(1700/2, 20, 1700/2, 875);
 
-  // Set colors
-  fill(255, 0, 0);
-  stroke(255,0,0);
 
-  // An ellipse Top Left
-    ellipse(50, 50, 100, 100);
+  // // Set colors
+  // fill(255, 0, 0);
+  // stroke(255,0,0);
+
 
 // Diagonal Bottom Left to Top Right
 stroke(255, 0, 0);
 strokeWeight(3);
 line(50, 850, 850, 50);
+
+//top line
+stroke(255, 0, 255);
+strokeWeight(3);
+line(850, 50, 50, 50);
+
+//bottom line
+stroke(0, 255, 0);
+strokeWeight(3);
+line(50, 850, 850, 850);
+
+// Left Line
+stroke(255, 255, 255);
+strokeWeight(3);
+line(50, 20, 50, 875);
+
+//Diagonal Bottom Right to Left
+      strokeWeight(3);
+                line(30, 20, 885, 875);
+      stroke(0, 255, 0);
+
+      // Right Line
+      stroke(0,0,0)
+        strokeWeight(3);
+                  line(1700/2, 20, 1700/2, 875);
 
 // Set colors
 fill(0, 0, 255);
@@ -51,19 +71,11 @@ stroke(0,0,255);
 // An ellipse Top Right
 ellipse(850, 50, 100, 100);
 
-// Left Line
-stroke(255, 255, 255);
-strokeWeight(3);
-line(50, 20, 50, 875);
+
 
       // Set colors
       fill(255, 255, 0);
       stroke(255,255,0);
-
-// Diagonal Bottom Right to Left
-      strokeWeight(3);
-                line(30, 20, 885, 875);
-      stroke(0, 255, 0);
 
       // An ellipse Bottom Left
         ellipse(50, 850, 100, 100);
@@ -75,15 +87,13 @@ stroke(255,255,255)
 
         // An ellipse Bottom Right
           ellipse(850, 850, 100, 100);
-//top line
-stroke(255, 0, 255);
-strokeWeight(3);
-line(850, 50, 50, 50);
 
-//bottom line
-stroke(0, 255, 0);
-strokeWeight(3);
-line(50, 850, 850, 850);
+          // An ellipse Top Left
+          fill(255, 0, 0);
+          stroke(255,0,0);
+            ellipse(50, 50, 100, 100);
+
+
 
           //Set the color of the text
           fill(255,255,255);
